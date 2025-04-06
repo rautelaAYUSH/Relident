@@ -1,0 +1,462 @@
+/* @import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
+
+.ultra-luxury-story {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background: #0a1a2f;
+}
+
+.luxury-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 75% 30%, #15457f40 0%, transparent 30%),
+    radial-gradient(circle at 25% 70%, #2098b230 0%, transparent 30%);
+  animation: bg-pulse 15s infinite alternate;
+}
+
+.story-centerpiece {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  max-width: 1400px;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+  font-size: clamp(4rem, 10vw, 6.5rem);
+  position: relative;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px #2098b2;
+  color: transparent;
+  letter-spacing: 0.1em;
+}
+
+.text-fill {
+  background: linear-gradient(45deg, #32b561, #1faee2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: block;
+  margin-top: -1.5rem;
+}
+
+.luxury-card-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.luxury-card {
+  flex: 1;
+  max-width: 320px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.luxury-card h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+}
+
+.luxury-card p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.luxury-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--card-bg);
+  z-index: -1;
+}
+
+.card-glow {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #1faee240 0%, transparent 70%);
+  filter: blur(30px);
+  top: -20px;
+  left: -20px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.luxury-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.luxury-card:hover .card-glow {
+  opacity: 1;
+}
+
+.card-icon {
+  width: 90%;
+  margin: 0 auto 1rem;
+}
+
+.card-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 5px 15px rgba(32, 152, 178, 0.3));
+}
+
+h3 {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+  font-weight: 450;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+p {
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+  font-weight: 350;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.luxury-cta {
+  background: transparent;
+  border: none;
+  color: white;
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.luxury-cta::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, #2098b2, #32b561);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+}
+
+.luxury-cta:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.cta-arrow {
+  transition: transform 0.5s ease;
+}
+
+.luxury-cta:hover .cta-arrow {
+  transform: translateX(5px);
+}
+
+@keyframes bg-pulse {
+  0% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .luxury-card-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .luxury-card {
+    max-width: 280px;
+  }
+  
+  h1 {
+    margin-bottom: 3rem;
+  }
+} 
+*/
+
+/* Base Styles */
+/* .our-story-section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(rgba(21, 69, 127, 0.8), rgba(21, 69, 127, 0.9)), 
+              url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1630&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.story-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.story-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  width: 90%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.story-title {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.title-accent {
+  font-weight: 700;
+  color: #32b561;
+}
+
+.story-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.story-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.item-year {
+  font-size: 1.5rem;
+  font-weight: 700;
+  min-width: 80px;
+}
+
+.item-details h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.item-details p {
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.story-cta {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.story-cta:hover {
+  background-color: #1a7a8f;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .story-title {
+    font-size: 2.5rem;
+  }
+
+  .story-item {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .item-year {
+    margin-bottom: 0.5rem;
+  }
+} 
+*/
+
+/* Modern Luxury Base */
+.our-story-luxury {
+  /* height: 100vh; */
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f8f8f8;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.luxury-accent-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #15457f, transparent);
+  opacity: 0.2;
+}
+
+.luxury-dot-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#15457f 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.05;
+}
+
+.luxury-content {
+  max-width: 1200px;
+  width: 90%;
+  z-index: 2;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.luxury-title {
+  position: relative;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  letter-spacing: 5px;
+}
+
+.luxury-title-stroke {
+  position: absolute;
+  -webkit-text-stroke: 2px #15457f;
+  color: transparent;
+  left: 0;
+  width: 100%;
+}
+
+.luxury-title-fill {
+  color: #15457f;
+  position: relative;
+}
+
+.luxury-timeline {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.timeline-card {
+  background: white;
+  padding: 2.5rem;
+  width: 300px;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+  text-align: left;
+}
+
+.timeline-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-year {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.timeline-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-card p {
+  color: #666;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.luxury-cta {
+  background: none;
+  border: none;
+  color: #15457f;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.cta-underline {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #2098b2, #32b561);
+  margin-top: 8px;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.luxury-cta:hover .cta-underline {
+  transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+  .luxury-title {
+    font-size: 3rem;
+  }
+
+  .luxury-timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-card {
+    width: 100%;
+  }
+}

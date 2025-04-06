@@ -1,41 +1,99 @@
-import React from 'react';
-import './Hero.css';
+// import React from "react";
+// import "./Hero.css";
 
-const Hero = () => {
+// const Hero = () => {
+//   return (
+//     <div className="relident-hero">
+//       <section className="hero-top">
+//         <div className="hero-background">
+//           <img src="/hero_bg.png" alt="Relident Background" className="hero-bg-image"/>
+//         </div>
+        
+//         <div className="hero-text-overlay">
+//           <h1>DISCOVER A BRIGHTER, HEALTHIER SMILE.</h1>
+//           <div className="divider-line"></div>
+//           <h2>EXPERIENCE THE NATURAL EVOLUTION OF ORAL CARE.</h2>
+//         </div>
+//       </section>
+//       <section className="hero-bottom">
+//         <div className="product-grid">
+//           {[1, 2, 3].map((num) => (
+//             <div key={num} className="product-item">
+//               <a href="#" className="product-link">
+//                 SHOP NOW
+//                 <span className="link-underline"></span>
+//               </a>
+//               <img 
+//                 src={`/product_${num}.png`} 
+//                 alt={`Relident Product ${num}`} 
+//                 className="product-image"
+//               />
+//             </div>
+//           ))}
+//         </div>
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default Hero;
+
+import React from "react";
+import "./Hero.css";
+
+const LuxuryHero = () => {
   return (
-    <div className="hero">
-      <div className="hero-content">
-        <h1 className="hero-title">Discover the Secret to a Brighter Smile</h1>
-        <p className="hero-subtitle">Experience advanced oral care for a healthier, confident you.</p>
-        <a href="/all-products" className="hero-button">All Products</a>
-      </div>
-      <div className="approved-by-section">
-        <div className="logo-container">
-          <h2 className="approved-by-heading">Approved By</h2>
-          <div className="logo-item">
-            <img src="approved.jpg" alt="Company 1" className="logo" />
-            {/* <p className="logo-text">Dentist Recommended</p> */}
-          </div>
-          <div className="logo-item">
-            <img src="approved.jpg" alt="Company 2" className="logo" />
-            {/* <p className="logo-text">Eco-Friendly Seal</p> */}
-          </div>
-          <div className="logo-item">
-            <img src="approved.jpg" alt="Company 3" className="logo" />
-            {/* <p className="logo-text">Oral Health Foundation</p> */}
-          </div>
-          <div className="logo-item">
-            <img src="approved.jpg" alt="Company 4" className="logo" />
-            {/* <p className="logo-text">Sustainable Choice</p> */}
-          </div>
-          <div className="logo-item">
-            <img src="approved.jpg" alt="Company 5" className="logo" />
-            {/* <p className="logo-text">Vegan Certified</p> */}
-          </div>
+    <div className="luxury-hero">
+      <section className="hero-top-section">
+        <div className="hero-background-wrapper">
+          <img 
+            src="/hero_bg.png" 
+            alt="Relident Background" 
+            className="hero-bg-image"
+          />
+          <div className="gradient-overlay"></div>
         </div>
-      </div>
+        
+        <div className="hero-content">
+          <h1 className="hero-headline">DISCOVER A BRIGHTER, HEALTHIER SMILE.</h1>
+          <div className="luxury-divider">
+            <span className="divider-diamond"></span>
+          </div>
+          <h2 className="hero-subhead">EXPERIENCE THE NATURAL EVOLUTION OF ORAL CARE.</h2>
+        </div>
+      </section>
+
+      <section className="hero-products">
+        <div className="product-showcase">
+          {[1, 2, 3].map((num) => (
+            <div key={num} className="product-card">
+              <a href="#" className="product-cta">
+                SHOP NOW
+                <span className="cta-underline"></span>
+              </a>
+              <div className="product-image-container">
+                <img 
+                  src={`/product_${num}.png`} 
+                  alt={`Relident Product ${num}`} 
+                  className="product-image"
+                />
+                <div className="product-glow"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };
 
-export default Hero;
+export default LuxuryHero;
+
+
+
+
+
+
+
+
+

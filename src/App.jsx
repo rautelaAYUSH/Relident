@@ -1,15 +1,50 @@
-import React from 'react'
-import "./App.css";
-import Header from "./components/Header";
-import Hero from "./pages/Hero";
+// import React from 'react'
+// import "./App.css";
+// import Header from "./components/Header";
+// import Hero from "./pages/Hero";
+// import OurStory from "./pages/OurStory";
+// import Product from "./pages/Products";
+// import Testimonials from "./pages/Testimonials";
+// import Footer from "./components/Footer";
 
-const App = () => {
+// const App = () => {
+//   return (
+//     <>
+//       <Header />
+//       <Hero />
+//       <OurStory />
+//       <Product />
+//       <Testimonials />
+//       <Footer />
+//     </>
+//   )
+// }
+
+// export default App
+
+import React from 'react';
+import Navbar from './components/Header';
+import Hero from "./pages/Hero";
+import OurStory from "./pages/OurStory";
+import Product from "./pages/Products";
+import Testimonials from "./pages/Testimonials";
+// import Footer from './components/Footer';
+import './App.css';
+
+function App() {
   return (
-    <>
-      <Header />
-      <Hero />
-    </>
-  )
+    <div className="app-container">
+      <Navbar />
+      <main className="main-content">
+        {/* Your page content goes here */}
+        <Hero />
+        <OurStory />
+        <Product />
+        <Testimonials />
+      </main>
+      {/* <Footer /> */}
+    </div>
+  );
 }
 
-export default App
+export default App;
