@@ -1,43 +1,3 @@
-// import React from "react";
-// import "./Hero.css";
-
-// const Hero = () => {
-//   return (
-//     <div className="relident-hero">
-//       <section className="hero-top">
-//         <div className="hero-background">
-//           <img src="/hero_bg.png" alt="Relident Background" className="hero-bg-image"/>
-//         </div>
-        
-//         <div className="hero-text-overlay">
-//           <h1>DISCOVER A BRIGHTER, HEALTHIER SMILE.</h1>
-//           <div className="divider-line"></div>
-//           <h2>EXPERIENCE THE NATURAL EVOLUTION OF ORAL CARE.</h2>
-//         </div>
-//       </section>
-//       <section className="hero-bottom">
-//         <div className="product-grid">
-//           {[1, 2, 3].map((num) => (
-//             <div key={num} className="product-item">
-//               <a href="#" className="product-link">
-//                 SHOP NOW
-//                 <span className="link-underline"></span>
-//               </a>
-//               <img 
-//                 src={`/product_${num}.png`} 
-//                 alt={`Relident Product ${num}`} 
-//                 className="product-image"
-//               />
-//             </div>
-//           ))}
-//         </div>
-//       </section>
-//     </div>
-//   );
-// };
-
-// export default Hero;
-
 import React from "react";
 import "./Hero.css";
 
@@ -64,9 +24,21 @@ const LuxuryHero = () => {
       </section>
 
       <section className="hero-products">
+        {/* 3D Background Elements */}
+        <div className="product-sphere sphere-1"></div>
+        <div className="product-sphere sphere-2"></div>
+        <div className="product-sphere sphere-3"></div>
+        <div className="product-sphere sphere-4"></div>
+  
+        {/* Floating Particles */}
+        <div className="product-particle particle-1"></div>
+        <div className="product-particle particle-2"></div>
+        <div className="product-particle particle-3"></div>
+        <div className="product-particle particle-4"></div>
+        
         <div className="product-showcase">
           {[1, 2, 3].map((num) => (
-            <div key={num} className="product-card">
+            <div key={num} className="product-cardd">
               <a href="#" className="product-cta">
                 SHOP NOW
                 <span className="cta-underline"></span>
@@ -77,7 +49,7 @@ const LuxuryHero = () => {
                   alt={`Relident Product ${num}`} 
                   className="product-image"
                 />
-                <div className="product-glow"></div>
+                <div className="product-gloww"></div>
               </div>
             </div>
           ))}

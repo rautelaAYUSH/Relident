@@ -1,194 +1,187 @@
-// import React from "react";
-// import "./OurStory.css";
-
-// const UltraLuxuryStory = () => {
-//   return (
-//     <div className="ultra-luxury-story">
-//       {/* Animated Background Layer */}
-//       <div className="luxury-bg-overlay"></div>
-      
-//       {/* Glowing Centerpiece */}
-//       <div className="story-centerpiece">
-//         <h1>
-//           {/* <span className="text-stroke">OUR</span> */}
-//           <span className="text-fill">OUR STORY</span>
-//         </h1>
-        
-//         {/* Floating 3D Cards */}
-//         <div className="luxury-card-grid">
-//           {[
-//             {
-//               icon: "/product_1.png",
-//               title: "HIMALAYAN HERITAGE",
-//               text: "Sourced from Uttarakhand’s rare herbs, filtered through Swiss microfiltration.",
-//               bg: "#2098b210"
-//             },
-//             {
-//               icon: "/product_2.png",
-//               title: "NEON-TECH WHITENING",
-//               text: "Laser-calibrated nanocrystals (22K/tube) for zero-sensitivity brilliance.",
-//               bg: "#32b56110"
-//             },
-//             {
-//               icon: "/product_3.png",
-//               title: "PACKAGING",
-//               text: "FSC-certified black glass with 24k gold typography.",
-//               bg: "#1faee210"
-//             }
-//           ].map((item, index) => (
-//             <div 
-//               key={index} 
-//               className="luxury-card"
-//               style={{ '--card-bg': item.bg }}
-//             >
-//               <div className="card-icon">
-//                 <img src={item.icon} alt={item.title} />
-//               </div>
-//               <h3>{item.title}</h3>
-//               <p>{item.text}</p>
-//               <div className="card-glow"></div>
-//             </div>
-//           ))}
-//         </div>
-
-//         {/* Micro-interaction Button */}
-//         <button className="luxury-cta">
-//           <span>EXPLORE ALL PRODUCTS</span>
-//           <div className="cta-arrow">→</div>
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default UltraLuxuryStory;
-
-
 // import React from 'react';
-// import './OurStory.css'; // Import CSS (shown below)
+// import './OurStory.css';
 
-// const OurStory = () => {
+// const OurStoryLuxury = () => {
 //   return (
-//     <section className="our-story-section">
-//       {/* Background Overlay */}
-//       <div className="story-overlay"></div>
+//     <section className="luxury-story-section">
+//       <div className="luxury-watermark">RELIDENT</div>
+//       <div className="gradient-overlay"></div>
+//       <div className="luxury-content-container">
+//         {/* Section Header */}
+//         <div className="section-header">
+//           <div className="header-line"></div>
+//           <h1 className="section-title">
+//             <span className="title-highlight">OUR</span> STORY
+//           </h1>
+//           <div className="header-line"></div>
+//         </div>
 
-//       {/* Content Container */}
-//       <div className="story-content">
-//         {/* Section Title */}
-//         <h2 className="story-title">
-//           <span className="title-accent">OUR</span> STORY
-//         </h2>
-
-//         {/* Timeline/Story Blocks */}
-//         <div className="story-timeline">
-//           {/* Story Item 1 */}
-//           <div className="story-item">
-//             <div className="item-year" style={{ color: '#1faee2' }}>2015</div>
-//             <div className="item-details">
-//               <h3 style={{ color: '#32b561' }}>The Beginning</h3>
+//         {/* Timeline */}
+//         <div className="luxury-timeline">
+//           {/* Timeline Item 1 */}
+//           <div className="timeline-item" style={{ '--accent-color': '#2098b2' }}>
+//             <div className="timeline-year">2015</div>
+//             <div className="timeline-content">
+//               <h3>The Genesis</h3>
 //               <p>
-//                 Founded by a team of dentists and chemists, RELIDENT began with a mission: 
-//                 to merge clinical expertise with luxury oral care.
+//                 Born in a Swiss lab, RELIDENT fused dental science with luxury aesthetics, 
+//                 redefining oral care as an experience.
 //               </p>
+//               <div className="timeline-ornament"></div>
 //             </div>
 //           </div>
 
-//           {/* Story Item 2 */}
-//           <div className="story-item">
-//             <div className="item-year" style={{ color: '#1faee2' }}>2018</div>
-//             <div className="item-details">
-//               <h3 style={{ color: '#32b561' }}>Breakthrough Formula</h3>
+//           {/* Timeline Item 2 */}
+//           <div className="timeline-item" style={{ '--accent-color': '#32b561' }}>
+//             <div className="timeline-year">2018</div>
+//             <div className="timeline-content">
+//               <h3>Innovation Unveiled</h3>
 //               <p>
-//                 Our patented enamel-strengthening technology launched, earning accolades 
-//                 from dental professionals worldwide.
+//                 Our patented Nano-Enamel™ technology debuted, earning the 
+//                 <em>Luxury Innovation Award</em> at Monaco Health Summit.
 //               </p>
+//               <div className="timeline-ornament"></div>
 //             </div>
 //           </div>
 
-//           {/* Story Item 3 */}
-//           <div className="story-item">
-//             <div className="item-year" style={{ color: '#1faee2' }}>2023</div>
-//             <div className="item-details">
-//               <h3 style={{ color: '#32b561' }}>Global Recognition</h3>
+//           {/* Timeline Item 3 */}
+//           <div className="timeline-item" style={{ '--accent-color': '#1faee2' }}>
+//             <div className="timeline-year">2023</div>
+//             <div className="timeline-content">
+//               <h3>Global Icon</h3>
 //               <p>
-//                 RELIDENT is now trusted by over 1 million users and featured in 
-//                 <em>Luxury Health Magazine</em>’s “Best of Beauty” list.
+//                 Featured in Vogue's "21 Most Luxurious Wellness Brands" and adored by 
+//                 celebrities and dentists alike.
 //               </p>
+//               <div className="timeline-ornament"></div>
 //             </div>
 //           </div>
 //         </div>
 
-//         {/* CTA Button */}
-//         <button className="story-cta" style={{ backgroundColor: '#2098b2' }}>
-//           Discover Our Products
+//         {/* CTA */}
+//         <button className="luxury-cta">
+//           <span>Explore the Collection</span>
+//           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+//             <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+//           </svg>
+//           <div className="cta-hover-effect"></div>
 //         </button>
 //       </div>
 //     </section>
 //   );
 // };
 
-// export default OurStory;
+// export default OurStoryLuxury;
 
-import React from 'react';
-import './OurStory.css'; // Import CSS (shown below)
+import React, { useEffect } from 'react';
+import './OurStory.css';
 
-const OurStoryLuxury = () => {
+const OurStoryUltimate = () => {
+  useEffect(() => {
+    // Dynamic particle creation
+    const createParticles = () => {
+      const particlesContainer = document.querySelector('.particles-container');
+      const particleCount = 30;
+      
+      for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'floating-particle';
+        
+        // Random properties
+        const size = Math.random() * 15 + 5;
+        const duration = Math.random() * 20 + 10;
+        const delay = Math.random() * 10;
+        const color = `hsl(${Math.random() * 60 + 190}, 70%, 60%)`;
+        
+        particle.style.cssText = `
+          width: ${size}px;
+          height: ${size}px;
+          background: ${color};
+          animation-duration: ${duration}s;
+          animation-delay: ${delay}s;
+          left: ${Math.random() * 100}%;
+          top: ${Math.random() * 100}%;
+        `;
+        
+        particlesContainer.appendChild(particle);
+      }
+    };
+
+    createParticles();
+  }, []);
+
   return (
-    <section className="our-story-luxury">
-      {/* Decorative Accents */}
-      <div className="luxury-accent-line"></div>
-      <div className="luxury-dot-grid"></div>
-
+    <section className="ultimate-story">
+      {/* Dynamic Background Elements */}
+      <div className="particles-container"></div>
+      <div className="liquid-shape shape-1"></div>
+      <div className="liquid-shape shape-2"></div>
+      <div className="gradient-mesh"></div>
+      
       {/* Main Content */}
-      <div className="luxury-content">
-        {/* Animated Title */}
-        <h1 className="luxury-title">
-          {/* <span className="luxury-title-stroke">OUR STORY</span> */}
-          <span className="luxury-title-fill">OUR STORY</span>
-        </h1>
+      <div className="crystal-container">
+        {/* Section Header */}
+        <div className="section-header">
+          <div className="header-line"></div>
+          <h1 className="section-title">
+            <span className="title-highlight">OUR</span> STORY
+          </h1>
+          <div className="header-line"></div>
+        </div>
 
-        {/* Timeline with Cards */}
-        <div className="luxury-timeline">
-          {/* Card 1 */}
-          <div className="timeline-card" style={{ borderTop: '4px solid #2098b2' }}>
-            <div className="card-year" style={{ color: '#1faee2' }}>2015</div>
-            <h3 style={{ color: '#32b561' }}>The Genesis</h3>
-            <p>
-              Born in a Swiss lab, RELIDENT fused dental science with luxury aesthetics, 
-              redefining oral care as an experience.
-            </p>
+        {/* Timeline */}
+        <div className="holographic-timeline">
+          {/* Timeline Item 1 */}
+          <div className="timeline-card" style={{ '--accent-color': '#2098b2' }}>
+            <div className="card-glow"></div>
+            <div className="card-content">
+              <div className="year-badge">2015</div>
+              <h3>The Genesis</h3>
+              <p>
+                Born in a Swiss lab, RELIDENT fused dental science with luxury aesthetics, 
+                redefining oral care as an experience.
+              </p>
+              <div className="card-ornament"></div>
+            </div>
           </div>
 
-          {/* Card 2 */}
-          <div className="timeline-card" style={{ borderTop: '4px solid #32b561' }}>
-            <div className="card-year" style={{ color: '#1faee2' }}>2018</div>
-            <h3 style={{ color: '#2098b2' }}>Innovation Unveiled</h3>
-            <p>
-              Our patented Nano-Enamel™ technology debuted, earning the 
-              *Luxury Innovation Award* at Monaco Health Summit.
-            </p>
+          {/* Timeline Item 2 */}
+          <div className="timeline-card" style={{ '--accent-color': '#32b561' }}>
+            <div className="card-glow"></div>
+            <div className="card-content">
+              <div className="year-badge">2018</div>
+              <h3>Innovation Unveiled</h3>
+              <p>
+                Our patented Nano-Enamel™ technology debuted, earning the 
+                <em>Luxury Innovation Award</em> at Monaco Health Summit.
+              </p>
+              <div className="card-ornament"></div>
+            </div>
           </div>
 
-          {/* Card 3 */}
-          <div className="timeline-card" style={{ borderTop: '4px solid #1faee2' }}>
-            <div className="card-year" style={{ color: '#32b561' }}>2023</div>
-            <h3 style={{ color: '#2098b2' }}>Global Icon</h3>
-            <p>
-              Featured in Vogue’s “21 Most Luxurious Wellness Brands” and adored by 
-              celebrities and dentists alike.
-            </p>
+          {/* Timeline Item 3 */}
+          <div className="timeline-card" style={{ '--accent-color': '#1faee2' }}>
+            <div className="card-glow"></div>
+            <div className="card-content">
+              <div className="year-badge">2023</div>
+              <h3>Global Icon</h3>
+              <p>
+                Featured in Vogue's "21 Most Luxurious Wellness Brands" and adored by 
+                celebrities and dentists alike.
+              </p>
+              <div className="card-ornament"></div>
+            </div>
           </div>
         </div>
 
         {/* CTA */}
-        <button className="luxury-cta">
+        <button className="neon-cta">
           <span>Explore the Collection</span>
-          <div className="cta-underline"></div>
+          <div className="cta-light-effect"></div>
         </button>
       </div>
     </section>
   );
 };
 
-export default OurStoryLuxury;
+export default OurStoryUltimate;
