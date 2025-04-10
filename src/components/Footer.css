@@ -37,7 +37,7 @@
   gap: 1.5rem;
 }
 
-.logo {
+.logoo {
   font-family: 'Playfair Display', serif;
   font-size: 2.2rem;
   font-weight: 600;
@@ -48,7 +48,7 @@
   display: inline-block;
 }
 
-.logo::after {
+.logoo::after {
   content: '';
   position: absolute;
   bottom: -8px;
@@ -70,13 +70,13 @@
   font-weight: 500;
 }
 
-.social-links {
+.social-linkss {
   display: flex;
   gap: 1.2rem;
   margin-top: 1rem;
 }
 
-.social-links a {
+.social-linkss a {
   color: rgba(255, 255, 255, 0.7);
   transition: all 0.3s ease;
   display: flex;
@@ -84,12 +84,12 @@
   justify-content: center;
 }
 
-.social-links a:hover {
+.social-linkss a:hover {
   color: #1faee2;
   transform: translateY(-2px);
 }
 
-.nav-column,
+.nav-columnn,
 .support-column {
   display: flex;
   flex-direction: column;
@@ -116,7 +116,7 @@
   background: #32b561;
 }
 
-ul {
+ull {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -125,7 +125,7 @@ ul {
   gap: 0.8rem;
 }
 
-ul li a {
+ull lii a {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   font-size: 0.95rem;
@@ -134,7 +134,7 @@ ul li a {
   padding-bottom: 2px;
 }
 
-ul li a::before {
+ull lii a::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -145,11 +145,11 @@ ul li a::before {
   transition: width 0.3s ease;
 }
 
-ul li a:hover {
+ull lii a:hover {
   color: #ffffff;
 }
 
-ul li a:hover::before {
+ull lii a:hover::before {
   width: 100%;
 }
 
@@ -284,12 +284,12 @@ ul li a:hover::before {
     text-align: center;
   }
 
-  .logo::after {
+  .logoo::after {
     left: 50%;
     transform: translateX(-50%);
   }
 
-  .nav-column,
+  .nav-columnn,
   .support-column,
   .newsletter-column {
     align-items: center;
@@ -300,4 +300,5 @@ ul li a:hover::before {
     left: 50%;
     transform: translateX(-50%);
   }
-}
+} 
+

@@ -8,11 +8,11 @@ const LuxuryFooter = () => {
 
       <div className="footer-content">
         <div className="brand-column">
-          <h3 className="logo">RELIDENT</h3>
+          <h3 className="logoo">RELIDENT</h3>
           <p className="tagline">
             Elevate your oral care with <span>clinically proven luxury</span>.
           </p>
-          <div className="social-links">
+          <div className="social-linkss">
             <a href="#" aria-label="Instagram">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -33,24 +33,24 @@ const LuxuryFooter = () => {
           </div>
         </div>
 
-        <div className="nav-column">
+        <div className="nav-columnn">
           <h4 className="column-title">Navigation</h4>
-          <ul>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Science</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Journal</a></li>
-          </ul>
+          <ull>
+            <lii><a href="#">Products</a></lii>
+            <lii><a href="#">Science</a></lii>
+            <lii><a href="#">About Us</a></lii>
+            <lii><a href="#">Journal</a></lii>
+          </ull>
         </div>
 
         <div className="support-column">
           <h4 className="column-title">Support</h4>
-          <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Shipping Policy</a></li>
-            <li><a href="#">Returns & Exchanges</a></li>
-            <li><a href="#">FAQ</a></li>
-          </ul>
+          <ull>
+            <lii><a href="#">Contact Us</a></lii>
+            <lii><a href="#">Shipping Policy</a></lii>
+            <lii><a href="#">Returns & Exchanges</a></lii>
+            <lii><a href="#">FAQ</a></lii>
+          </ull>
         </div>
 
         <div className="newsletter-column">

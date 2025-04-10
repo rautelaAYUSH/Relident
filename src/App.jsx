@@ -4,7 +4,7 @@ import Hero from "./pages/Hero";
 import OurStory from "./pages/OurStory";
 import Product from "./pages/Products";
 import Testimonials from "./pages/Testimonials";
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -18,9 +18,10 @@ function App() {
         <Product />
         <Testimonials />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
