@@ -1,7 +1,7 @@
 // import React, { useState, useEffect } from 'react';
 // import './Testimonials.css';
 
-// const DarkLuxuryTestimonials = () => {
+// const Testimonials = () => {
 //   const [activeIndex, setActiveIndex] = useState(0);
 
 //   const testimonials = [
@@ -48,48 +48,48 @@
 //   };
 
 //   return (
-//     <div className="dark-luxury-testimonialss">
+//     <div className="relident-testimonials-container">
 //       {/* Animated Dark Background */}
 //       <div 
-//         className="dark-bg-overlayy" 
+//         className="relident-bg-overlay" 
 //         style={{ 
 //           background: `radial-gradient(circle at 75% 30%, ${testimonials[activeIndex].accent}05, #0a0e17)`
 //         }}
 //       ></div>
 
 //       {/* Gold Decorative Border */}
-//       <div className="luxury-borderr"></div>
+//       <div className="relident-luxury-border"></div>
 
 //       {/* Header */}
-//       <div className="dark-headerr">
-//         <div className="gold-linee"></div>
-//         <h1>TESTIMONIALS</h1>
-//         <div className="gold-linee"></div>
+//       <div className="relident-header">
+//         <div className="relident-gold-line"></div>
+//         <h1 className="relident-title">TESTIMONIALS</h1>
+//         <div className="relident-gold-line"></div>
 //       </div>
 
 //       {/* Testimonial Carousel */}
-//       <div className="dark-carousell">
-//         <button className="dark-nav-arroww prev" onClick={prevTestimonial}>
+//       <div className="relident-carousel">
+//         <button className="relident-nav-arrow relident-prev" onClick={prevTestimonial}>
 //           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
 //             <path d="M15 18L9 12L15 6" stroke="#d4af37" strokeWidth="2" strokeLinecap="round"/>
 //           </svg>
 //         </button>
 
-//         <div className="dark-testimonial-trackk">
+//         <div className="relident-testimonial-track">
 //           {testimonials.map((testimonial, index) => (
 //             <div 
 //               key={testimonial.id}
-//               className={`dark-testimonial-cardd ${index === activeIndex ? 'active' : ''}`}
+//               className={`relident-testimonial-card ${index === activeIndex ? 'relident-active' : ''}`}
 //               style={{ 
 //                 borderLeft: `4px solid ${testimonial.accent}`,
 //                 opacity: index === activeIndex ? 1 : 0
 //               }}
 //             >
-//               <div className="dark-ratingg">
+//               <div className="relident-rating">
 //                 {[...Array(5)].map((_, i) => (
 //                   <span 
 //                     key={i} 
-//                     className={`dark-starr ${i < testimonial.rating ? 'filled' : ''}`}
+//                     className={`relident-star ${i < testimonial.rating ? 'relident-filled' : ''}`}
 //                     style={{ color: i < testimonial.rating ? testimonial.accent : '#333' }}
 //                   >
 //                     ★
@@ -97,22 +97,22 @@
 //                 ))}
 //               </div>
               
-//               <blockquote>
-//                 <p>{testimonial.quote}</p>
+//               <blockquote className="relident-quote">
+//                 <p className="relident-quote-text">{testimonial.quote}</p>
 //               </blockquote>
 
-//               <div className="dark-authorr">
-//                 <div className="dark-accent-linee" style={{ backgroundColor: testimonial.accent }}></div>
-//                 <div>
-//                   <h3>{testimonial.author}</h3>
-//                   <p>{testimonial.title}</p>
+//               <div className="relident-author">
+//                 <div className="relident-accent-line" style={{ backgroundColor: testimonial.accent }}></div>
+//                 <div className="relident-author-info">
+//                   <h3 className="relident-author-name">{testimonial.author}</h3>
+//                   <p className="relident-author-title">{testimonial.title}</p>
 //                 </div>
 //               </div>
 //             </div>
 //           ))}
 //         </div>
 
-//         <button className="dark-nav-arrow next" onClick={nextTestimonial}>
+//         <button className="relident-nav-arrow relident-next" onClick={nextTestimonial}>
 //           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
 //             <path d="M9 18L15 12L9 6" stroke="#d4af37" strokeWidth="2" strokeLinecap="round"/>
 //           </svg>
@@ -120,15 +120,15 @@
 //       </div>
 
 //       {/* Gold Indicators */}
-//       <div className="dark-indicatorss">
+//       <div className="relident-indicators">
 //         {testimonials.map((_, index) => (
 //           <button
 //             key={index}
-//             className={`dark-indicatorr ${index === activeIndex ? 'active' : ''}`}
+//             className={`relident-indicator ${index === activeIndex ? 'relident-active' : ''}`}
 //             onClick={() => setActiveIndex(index)}
 //           >
 //             <div 
-//               className="dark-indicator-progresss" 
+//               className="relident-indicator-progress" 
 //               style={{ 
 //                 backgroundColor: testimonials[index].accent,
 //                 width: index === activeIndex ? '100%' : '0%',
@@ -140,11 +140,11 @@
 //       </div>
 
 //       {/* Animated Gold Particles */}
-//       <div className="gold-particless">
+//       <div className="relident-particles">
 //         {[...Array(8)].map((_, i) => (
 //           <div 
 //             key={i} 
-//             className="particlee" 
+//             className="relident-particle" 
 //             style={{
 //               top: `${Math.random() * 100}%`,
 //               left: `${Math.random() * 100}%`,
@@ -157,7 +157,7 @@
 //   );
 // };
 
-// export default DarkLuxuryTestimonials;
+// export default Testimonials;
 
 
 import React, { useState, useEffect } from 'react';
@@ -211,15 +211,15 @@ const Testimonials = () => {
 
   return (
     <div className="relident-testimonials-container">
-      {/* Animated Dark Background */}
+      {/* Animated Background */}
       <div 
         className="relident-bg-overlay" 
         style={{ 
-          background: `radial-gradient(circle at 75% 30%, ${testimonials[activeIndex].accent}05, #0a0e17)`
+          background: `radial-gradient(circle at 75% 30%, ${testimonials[activeIndex].accent}15, #f5f5f5)`
         }}
       ></div>
 
-      {/* Gold Decorative Border */}
+      {/* Decorative Border */}
       <div className="relident-luxury-border"></div>
 
       {/* Header */}
@@ -233,7 +233,7 @@ const Testimonials = () => {
       <div className="relident-carousel">
         <button className="relident-nav-arrow relident-prev" onClick={prevTestimonial}>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M15 18L9 12L15 6" stroke="#d4af37" strokeWidth="2" strokeLinecap="round"/>
+            <path d="M15 18L9 12L15 6" stroke="#15457f" strokeWidth="2" strokeLinecap="round"/>
           </svg>
         </button>
 
@@ -252,7 +252,7 @@ const Testimonials = () => {
                   <span 
                     key={i} 
                     className={`relident-star ${i < testimonial.rating ? 'relident-filled' : ''}`}
-                    style={{ color: i < testimonial.rating ? testimonial.accent : '#333' }}
+                    style={{ color: i < testimonial.rating ? testimonial.accent : '#999' }}
                   >
                     ★
                   </span>
@@ -276,12 +276,12 @@ const Testimonials = () => {
 
         <button className="relident-nav-arrow relident-next" onClick={nextTestimonial}>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M9 18L15 12L9 6" stroke="#d4af37" strokeWidth="2" strokeLinecap="round"/>
+            <path d="M9 18L15 12L9 6" stroke="#15457f" strokeWidth="2" strokeLinecap="round"/>
           </svg>
         </button>
       </div>
 
-      {/* Gold Indicators */}
+      {/* Indicators */}
       <div className="relident-indicators">
         {testimonials.map((_, index) => (
           <button
@@ -301,7 +301,7 @@ const Testimonials = () => {
         ))}
       </div>
 
-      {/* Animated Gold Particles */}
+      {/* Animated Particles */}
       <div className="relident-particles">
         {[...Array(8)].map((_, i) => (
           <div 
@@ -320,3 +320,5 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
+

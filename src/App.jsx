@@ -1,27 +1,3 @@
-// import React from 'react'
-// import "./App.css";
-// import Header from "./components/Header";
-// import Hero from "./pages/Hero";
-// import OurStory from "./pages/OurStory";
-// import Product from "./pages/Products";
-// import Testimonials from "./pages/Testimonials";
-// import Footer from "./components/Footer";
-
-// const App = () => {
-//   return (
-//     <>
-//       <Header />
-//       <Hero />
-//       <OurStory />
-//       <Product />
-//       <Testimonials />
-//       <Footer />
-//     </>
-//   )
-// }
-
-// export default App
-
 import React from 'react';
 import Navbar from './components/Header';
 import Hero from "./pages/Hero";
