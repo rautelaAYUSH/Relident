@@ -2,14 +2,13 @@
 
 .luxury-hero {
   width: 100%;
-  /* height: 100vh; */
   height: auto;
   min-height: 100vh;
   overflow: hidden;
   position: relative;
 }
 
-/* Top Section */
+
 .hero-top-section {
   height: 60vh;
   position: relative;
@@ -40,9 +39,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: linear-gradient(to bottom, 
-    rgba(21, 69, 127, 0.3) 0%, 
-    rgba(32, 152, 178, 0.5) 100%); */
 }
 
 .hero-content {
@@ -55,7 +51,6 @@
   max-width: 900px;
   padding: 3rem;
   background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
 }
@@ -106,41 +101,6 @@
   text-transform: uppercase;
 }
 
-/* Product Showcase */
-/* .hero-products {
-  height: 40vh;
-  display: flex;
-  align-items: center;
-  background: #f8f8f8;
-}
-
-.product-showcase {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  gap: 4rem;
-  padding: 0 4rem;
-}
-
-.product-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 280px;
-  position: relative;
-} 
-*/
-
-/* .hero-products {
-  height: auto; 
-  min-height: 40vh;
-  display: flex;
-  align-items: center;
-  background: #f8f8f8;
-  padding: 3rem 0;
-} */
-
-/* Add this new CSS for the 3D background */
 .hero-products {
   height: auto;
   min-height: 40vh;
@@ -151,7 +111,6 @@
   padding: 3rem 0;
 }
 
-/* 3D Background Elements */
 .hero-products::before {
   content: '';
   position: absolute;
@@ -184,7 +143,7 @@
   z-index: 0;
 }
 
-/* Floating 3D Spheres */
+
 .hero-products .product-sphere {
   position: absolute;
   border-radius: 50%;
@@ -230,7 +189,6 @@
   animation-delay: 15s;
 }
 
-/* Floating Particles */
 .hero-products .product-particle {
   position: absolute;
   border-radius: 50%;
@@ -245,7 +203,6 @@
 .hero-products .particle-3 { width: 8px; height: 8px; background: #1faee2; top: 70%; right: 20%; animation-delay: 6s; }
 .hero-products .particle-4 { width: 12px; height: 12px; background: #15457f; top: 40%; right: 30%; animation-delay: 8s; }
 
-/* Animation */
 @keyframes float {
   0%, 100% { transform: translate(0, 0) rotate(0deg); }
   25% { transform: translate(20px, -30px) rotate(5deg); }
@@ -253,7 +210,7 @@
   75% { transform: translate(10px, -10px) rotate(3deg); }
 }
 
-/* Make sure product content stays above the background */
+
 .product-showcase {
   position: relative;
   z-index: 1;
@@ -261,24 +218,24 @@
 
 .product-showcase {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap */
+  flex-wrap: wrap; 
   justify-content: center;
   width: 100%;
-  gap: 2rem; /* Reduced gap */
-  padding: 0 2rem; /* Adjusted padding */
+  gap: 2rem; 
+  padding: 0 2rem; 
   margin: 0 auto;
-  max-width: 1200px; /* Added max-width */
+  max-width: 1200px; 
 }
 
 .product-cardd {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(33.333% - 2rem); /* Flexible width with gap consideration */
+  width: calc(33.333% - 2rem); 
   max-width: 280px;
-  min-width: 200px; /* Minimum width before stacking */
+  min-width: 200px; 
   position: relative;
-  margin-bottom: 1rem; /* Added margin for wrapped items */
+  margin-bottom: 1rem; 
 }
 
 .product-cta {
@@ -349,7 +306,6 @@
   opacity: 1;
 }
 
-/* Responsive */
 @media (max-width: 1200px) {
   .product-showcase {
     gap: 3rem;
@@ -362,18 +318,13 @@
     width: 85%;
   }
 
-  /* .product-showcase {
-    gap: 2rem;
-    padding: 0 2rem;
-  } */
-
   .product-showcase {
     gap: 1.5rem;
     padding: 0 1.5rem;
   }
   
   .product-card {
-    width: calc(50% - 1.5rem); /* 2 columns */
+    width: calc(50% - 1.5rem); 
   }
 }
 
@@ -382,24 +333,12 @@
     height: 65vh;
   }
   
-  /* .hero-products {
-    height: 35vh;
-  } */
-  
   .hero-content {
     padding: 2rem;
   }
 
-  /* .product-showcase {
-    flex-wrap: wrap;
-    gap: 2.5rem;
-  } */
-  
-  /* .product-card {
-    max-width: 220px;
-  } */
   .hero-products {
-    min-height: auto; /* Remove fixed height */
+    min-height: auto;
     padding: 2rem 0;
   }
   
@@ -409,7 +348,7 @@
   }
   
   .product-card {
-    width: 100%; /* Full width on smallest screens */
+    width: 100%; 
     max-width: 250px;
   }
 }
@@ -420,16 +359,6 @@
     padding: 1.5rem;
   }
   
-  /* .product-showcase {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem;
-  }
-
-  .product-card {
-    max-width: 200px;
-  } */
   .product-showcase {
     flex-direction: column;
     align-items: center;
